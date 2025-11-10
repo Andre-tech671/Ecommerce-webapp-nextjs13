@@ -11,6 +11,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+export const metadata = {
+  title: "Next.js 13 Store",
+  description: "A simple e-commerce store built with Next.js 13",
+};
+
 import { Inter } from "next/font/google";
 const inter = Inter({
   subsets: ["latin"],
@@ -23,7 +28,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={'min-h-screen flex flex-col bg-white ' + inter.className} suppressHydrationWarning={true}>
-        {children}
+        <main className="flex-grow">
+          {children}
+        </main>
+        <footer>This is the footer</footer>
       </body>
     </html>
   );
