@@ -22,7 +22,7 @@ const inter = Inter({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={'min-h-screen flex flex-col ' + inter.className} suppressHydrationWarning={true}>
+      <body className={'min-h-screen flex flex-col bg-white ' + inter.className} suppressHydrationWarning={true}>
         {children}
       </body>
     </html>
